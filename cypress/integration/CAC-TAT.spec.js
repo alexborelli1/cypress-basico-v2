@@ -67,10 +67,14 @@
             .should('be.visible')
             .type('Observacao')
             .should('have.value', 'Observacao')
-        
+
         cy.get('.button').click()
 
-        cy.get('.error > strong').should('have.text', 'Valide os campos obrigatórios!')
+        cy.get('.error')
+            .should('be.visible')
+
+        cy.get('.error > strong')
+            .should('have.text', 'Valide os campos obrigatórios!')
     });
 
     it('Exercício extra 3 - verificando se o campo telefone aceita somente numeros', () => {
