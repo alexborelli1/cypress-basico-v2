@@ -218,7 +218,7 @@
         
     });
 
-    it.only('Exercício extra 2 - seleciona um arquivo utilizando uma fixture para a qual foi dada um alias', () => {
+    it('Exercício extra 2 - seleciona um arquivo utilizando uma fixture para a qual foi dada um alias', () => {
         cy.fixture('example.json').as('file'),
         cy.fixture('example2.json').as('file2')
         cy.get('#file-upload')
