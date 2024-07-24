@@ -237,7 +237,7 @@
         
     });
 
-    // Aula 8
+    // Aula 8 
     it('Aula 8 - verifica que a política de privacidade abre em outra aba sem a necessidade de um clique', () => {
         cy.get('a[href="privacy.html"]')
             .should('have.attr', 'target', '_blank')        
